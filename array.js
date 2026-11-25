@@ -65,7 +65,7 @@ console.log(nomesColegas)
 
 // 4. 
 
-nomesColegas[nomesColegas.length] = "Gabriel"
+nomesColegas[nomesColegas.length] = "Gabriel" 
 nomesColegas[nomesColegas.length] = "Larissa"
 console.log(nomesColegas)
 
@@ -77,3 +77,23 @@ console.log(nomesColegas[4])
 
 let PETs = nomesColegas.shift()
 console.log(PETs)
+
+///////////////////////////////////////////////
+
+// se eu precisar validar que uma informação existe em um array?
+
+console.log(nomesColegas.includes("Samuel"))
+// false = não existe 
+// true = existe
+
+// se eu precisar saber em que posição essa informação está?
+
+console.log(nomesColegas.indexOf("Lua"))
+
+// se eu precisar percorrer todo o array?
+// "=>" arrow function é usado para definir uma função anonima 
+// () => {} declaração da função anonima 
+
+nomesColegas.forEach((linha, contador)=>{
+    console.log("O " + (contador+1) + " registro é: " + linha)
+})
